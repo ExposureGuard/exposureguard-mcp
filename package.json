@@ -20,8 +20,7 @@
   "homepage": "https://getexposureguard.com",
   "repository": {
     "type": "git",
-    "url": "https://codeberg.org/0xN0rD/exposureguard-tools.git",
-    "directory": "mcp-server"
+    "url": "https://github.com/ExposureGuard/exposureguard-mcp.git"
   },
   "license": "MIT",
   "bin": {
