@@ -1,0 +1,23 @@
+# Smithery configuration — https://smithery.ai/docs/config#smitheryyaml
+
+startCommand:
+  type: stdio
+
+configSchema:
+  type: object
+  required:
+    - apiKey
+  properties:
+    apiKey:
+      type: string
+      description: "Your ExposureGuard API key (get one free at https://getexposureguard.com/account)"
+
+commandFunction: |-
+  (config) => ({
+    command: 'python3',
+    args: ['-m', 'exposureguard_mcp'],
+    env: { EXPOSUREGUARD_API_KEY: config.apiKey }
+  })
+
+exampleConfig:
+  apiKey: "eg_your_api_key_here"
