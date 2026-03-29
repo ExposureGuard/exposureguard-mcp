@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "exposureguard-mcp"
+version = "1.0.0"
+description = "MCP server for ExposureGuard domain security scanning API"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+    "mcp>=1.0.0",
+    "httpx>=0.27.0",
+]
+
+[project.scripts]
+exposureguard-mcp = "exposureguard_mcp.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["exposureguard_mcp"]
