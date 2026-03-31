@@ -1,3 +1,4 @@
+<!-- mcp-name: io.github.ExposureGuard/exposureguard-mcp -->
 # ExposureGuard MCP Server
 
 An [MCP (Model Context Protocol)](https://modelcontextprotocol.io) server that connects AI assistants to the [ExposureGuard](https://getexposureguard.com) domain security scanning API.

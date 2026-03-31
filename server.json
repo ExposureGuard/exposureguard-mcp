@@ -1,0 +1,19 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ExposureGuard/exposureguard-mcp",
+  "title": "ExposureGuard",
+  "description": "Domain security scanning for AI agents — SPF, DMARC, SSL, headers, DNSSEC, open ports. Get A–F grades with copy-paste fix snippets.",
+  "repository": {
+    "url": "https://github.com/ExposureGuard/exposureguard-mcp",
+    "source": "github"
+  },
+  "version": "1.0.1",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "exposureguard-mcp",
+      "version": "1.0.1",
+      "transport": { "type": "stdio" }
+    }
+  ]
+}
